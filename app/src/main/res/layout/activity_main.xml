@@ -1,37 +1,187 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:layout_marginLeft="20dp"
+    >
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Podaj swoje imię:"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="20dp"
+
+        />
 
     <EditText
-        android:id="@+id/EditText"
+        android:id="@+id/EditText1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Twoje imie..."
         android:inputType="text"
+        android:layout_gravity="left"
 
         />
 
-    <SeekBar
-        android:id="@+id/SeekBar"
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jakiej jesteś rasy:"
+        android:textSize="20dp"
+
+        />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+
+        />
+
+<!--    <DatePicker-->
+<!--        android:id="@+id/my_calendar_datepicker"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:datePickerMode="calendar"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:padding="10dp"-->
+<!--        />-->
+
+    <Button
+        android:id="@+id/open_datepicker_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Wybierz datę"
+        android:layout_gravity="left"
+        android:layout_marginLeft="15dp"
 
+        />
+
+<!--    <TimePicker-->
+<!--        android:id="@+id/spinner_timepicker"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:timePickerMode="spinner"-->
+<!--        />-->
+
+    <Button
+        android:id="@+id/open_timepicker_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wybierz czas"
+        android:layout_gravity="left"
+        android:layout_marginLeft="15dp"
+        />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:showText="true"
+        android:layout_gravity="center"
+        android:textOn="ON"
+        android:textOff="OFF"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wyposażenie:"
+
+        />
+
+    <CheckBox
+        android:id="@+id/checkbox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Łopata"
+        android:layout_gravity="left"
+        android:layout_marginLeft="160dp"
+
+        />
+
+    <CheckBox
+        android:id="@+id/checkbox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sznur"
+        android:layout_gravity="left"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="-20dp"
+
+        />
+
+    <CheckBox
+        android:id="@+id/checkbox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Taśma Izolacyjna"
+        android:layout_gravity="left"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="-20dp"
+
+        />
+
+    <RadioGroup
+        android:id="@+id/priorytet_radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+
+        >
+
+        <RadioButton
+            android:id="@+id/mały_radiobatton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mały"
+
+            />
+
+        <RadioButton
+            android:id="@+id/średni_radiobatton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Średni"
+            android:layout_marginTop="-20dp"
+
+            />
+
+        <RadioButton
+            android:id="@+id/duży_radiobatton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duży"
+            android:layout_marginTop="-20dp"
+
+            />
+
+    </RadioGroup>
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="10"
+        android:progress="0"
+        android:progressTint="#FF0000"
+        android:progressBackgroundTint="#929292"
+        android:thumbTint="#000000"
 
         />
 
